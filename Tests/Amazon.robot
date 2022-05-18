@@ -1,11 +1,14 @@
 *** Settings ***
 Documentation  This is basic info about whole suite
-Library  SeleniumLibrary
+Resource  Resources/Common.robot
+Resource  Resources/Amazon.robot
+Test Setup  Begin Web Test
+Test Teardown  End Web Test
 
 *** Variables ***
 
 *** Test Cases ***
-User must sign in to check out
+Logged out user can search for products
 
   [Documentation]   This is some info
   [Tags]  Smoke

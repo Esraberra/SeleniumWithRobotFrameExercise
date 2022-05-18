@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220518 13:37:37.721" rpa="false" schemaversion="3">
+<suite id="s1" name="Amazon" source="C:\Users\ekucuk\RobotFrameWork_Project1\Tests\Amazon.robot">
+<test id="s1-t1" name="User must sign in to check out" line="8">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://www.amazon.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220518 13:37:37.910" level="INFO">Opening browser 'chrome' to base url 'http://www.amazon.com'.</msg>
+<status status="PASS" starttime="20220518 13:37:37.910" endtime="20220518 13:37:42.678"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Today's Deals</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220518 13:37:42.680" endtime="20220518 13:37:42.708"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=twotabsearchtextbox</arg>
+<arg>Ferrari 458</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220518 13:37:42.708" level="INFO">Typing text 'Ferrari 458' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20220518 13:37:42.708" endtime="20220518 13:37:42.860"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=nav-search-submit-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220518 13:37:42.860" level="INFO">Clicking button 'id=nav-search-submit-button'.</msg>
+<status status="PASS" starttime="20220518 13:37:42.860" endtime="20220518 13:37:45.613"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>results for "Ferrari 458"</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220518 13:37:45.614" endtime="20220518 13:37:45.637"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link:Ferrari Remote Control Cars - 1:24 BEZGAR Officially Licensed RC Series, Electric Sport Racing Toy Car Model Vehicle, 2.4Ghz RC Car for Kids, Adults, Girls and Boys Holiday Ideas Gift (71900 Red)</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220518 13:37:45.637" level="INFO">Clicking link 'link:Ferrari Remote Control Cars - 1:24 BEZGAR Officially Licensed RC Series, Electric Sport Racing Toy Car Model Vehicle, 2.4Ghz RC Car for Kids, Adults, Girls and Boys Holiday Ideas Gift (71900 Red)'.</msg>
+<status status="PASS" starttime="20220518 13:37:45.637" endtime="20220518 13:37:49.420"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220518 13:37:52.431" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220518 13:37:49.421" endtime="20220518 13:37:52.431"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Back to results</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220518 13:37:52.431" endtime="20220518 13:37:52.476"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=add-to-cart-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220518 13:37:52.476" level="INFO">Clicking button 'id=add-to-cart-button'.</msg>
+<status status="PASS" starttime="20220518 13:37:52.476" endtime="20220518 13:37:54.673"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Added to Cart</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220518 13:37:54.674" endtime="20220518 13:37:54.695"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//input[@name='proceedToRetailCheckout']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220518 13:37:54.696" level="INFO">Clicking button 'xpath=//input[@name='proceedToRetailCheckout']'.</msg>
+<status status="PASS" starttime="20220518 13:37:54.696" endtime="20220518 13:37:55.942"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Sign-In</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220518 13:37:55.942" endtime="20220518 13:37:55.959"/>
+</kw>
+<doc>This is some info</doc>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20220518 13:37:37.908" endtime="20220518 13:37:55.960"/>
+</test>
+<doc>This is basic info about whole suite</doc>
+<status status="PASS" starttime="20220518 13:37:37.722" endtime="20220518 13:37:55.962"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Amazon">Amazon</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
