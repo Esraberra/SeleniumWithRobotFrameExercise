@@ -4,7 +4,8 @@ Library  SeleniumLibrary
 *** Variables ***
 *** Keywords ***
 Begin Web Test
-  open browser
+
+  OPEN BROWSER  about:blank  chrome
 
 End Web Test
-  close browser
+  CLOSE BROWSER
