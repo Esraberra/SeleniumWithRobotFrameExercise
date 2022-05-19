@@ -1,0 +1,17 @@
+Resources directory will break up into Keywords
+Resource dosyasinda yer alan robot file larin icinde keywordler ile parcalanir.
+
+Locators will ve encapsulated in page files_>> POM'a göre yapildigi icin page dosyalari icinde locatorler encapusule edilecek
+Library SeleniumLibrary will be used in Page files-->> Selenium kütüphanesi page lerin locater larinin yer aldigi dosyalara yazilir.
+
+SIRALAMA-PLACEMENT
+
+Tests/Amazon.robot
+        |
+Resources/Amazon.robot
+|                 |
+LandingPage     SearchResult
+           |
+    SeleniumLibrary
+           |
+     SeleniumWebDriver
